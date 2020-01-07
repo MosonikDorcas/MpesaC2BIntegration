@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="GetTransID">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetTransID_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetTransTime">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetTransTime_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetTransAmount">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetTransAmount_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBusinessShortCode">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBusinessShortCode_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBillRefNumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBillRefNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInvoiceNumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInvoiceNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetOrgAccountBalance">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetOrgAccountBalance_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetThirdPartyTransID">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetThirdPartyTransID_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetMSISDN">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetMSISDN_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFirstName">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFirstName_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetMiddleName">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetMiddleName_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetLastName">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetLastName_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetRequests">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transactionid" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetRequests_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SaveTransaction">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="transID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="transactionType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="transTime" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="transAmount" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="businessShortCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="billRefNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="invoiceNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="orgAccountBalance" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="thirdPartyTransID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mSISDN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="firstName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="middleName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lastName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="action" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SaveTransaction_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="GetTransID">
+    <part name="parameters" element="tns:GetTransID" />
+  </message>
+  <message name="GetTransID_Result">
+    <part name="parameters" element="tns:GetTransID_Result" />
+  </message>
+  <message name="GetTransTime">
+    <part name="parameters" element="tns:GetTransTime" />
+  </message>
+  <message name="GetTransTime_Result">
+    <part name="parameters" element="tns:GetTransTime_Result" />
+  </message>
+  <message name="GetTransAmount">
+    <part name="parameters" element="tns:GetTransAmount" />
+  </message>
+  <message name="GetTransAmount_Result">
+    <part name="parameters" element="tns:GetTransAmount_Result" />
+  </message>
+  <message name="GetBusinessShortCode">
+    <part name="parameters" element="tns:GetBusinessShortCode" />
+  </message>
+  <message name="GetBusinessShortCode_Result">
+    <part name="parameters" element="tns:GetBusinessShortCode_Result" />
+  </message>
+  <message name="GetBillRefNumber">
+    <part name="parameters" element="tns:GetBillRefNumber" />
+  </message>
+  <message name="GetBillRefNumber_Result">
+    <part name="parameters" element="tns:GetBillRefNumber_Result" />
+  </message>
+  <message name="GetInvoiceNumber">
+    <part name="parameters" element="tns:GetInvoiceNumber" />
+  </message>
+  <message name="GetInvoiceNumber_Result">
+    <part name="parameters" element="tns:GetInvoiceNumber_Result" />
+  </message>
+  <message name="GetOrgAccountBalance">
+    <part name="parameters" element="tns:GetOrgAccountBalance" />
+  </message>
+  <message name="GetOrgAccountBalance_Result">
+    <part name="parameters" element="tns:GetOrgAccountBalance_Result" />
+  </message>
+  <message name="GetThirdPartyTransID">
+    <part name="parameters" element="tns:GetThirdPartyTransID" />
+  </message>
+  <message name="GetThirdPartyTransID_Result">
+    <part name="parameters" element="tns:GetThirdPartyTransID_Result" />
+  </message>
+  <message name="GetMSISDN">
+    <part name="parameters" element="tns:GetMSISDN" />
+  </message>
+  <message name="GetMSISDN_Result">
+    <part name="parameters" element="tns:GetMSISDN_Result" />
+  </message>
+  <message name="GetFirstName">
+    <part name="parameters" element="tns:GetFirstName" />
+  </message>
+  <message name="GetFirstName_Result">
+    <part name="parameters" element="tns:GetFirstName_Result" />
+  </message>
+  <message name="GetMiddleName">
+    <part name="parameters" element="tns:GetMiddleName" />
+  </message>
+  <message name="GetMiddleName_Result">
+    <part name="parameters" element="tns:GetMiddleName_Result" />
+  </message>
+  <message name="GetLastName">
+    <part name="parameters" element="tns:GetLastName" />
+  </message>
+  <message name="GetLastName_Result">
+    <part name="parameters" element="tns:GetLastName_Result" />
+  </message>
+  <message name="GetRequests">
+    <part name="parameters" element="tns:GetRequests" />
+  </message>
+  <message name="GetRequests_Result">
+    <part name="parameters" element="tns:GetRequests_Result" />
+  </message>
+  <message name="SaveTransaction">
+    <part name="parameters" element="tns:SaveTransaction" />
+  </message>
+  <message name="SaveTransaction_Result">
+    <part name="parameters" element="tns:SaveTransaction_Result" />
+  </message>
+  <portType name="Mpesa_WebService_Port">
+    <operation name="GetTransID">
+      <input name="GetTransID" message="tns:GetTransID" />
+      <output name="GetTransID_Result" message="tns:GetTransID_Result" />
+    </operation>
+    <operation name="GetTransTime">
+      <input name="GetTransTime" message="tns:GetTransTime" />
+      <output name="GetTransTime_Result" message="tns:GetTransTime_Result" />
+    </operation>
+    <operation name="GetTransAmount">
+      <input name="GetTransAmount" message="tns:GetTransAmount" />
+      <output name="GetTransAmount_Result" message="tns:GetTransAmount_Result" />
+    </operation>
+    <operation name="GetBusinessShortCode">
+      <input name="GetBusinessShortCode" message="tns:GetBusinessShortCode" />
+      <output name="GetBusinessShortCode_Result" message="tns:GetBusinessShortCode_Result" />
+    </operation>
+    <operation name="GetBillRefNumber">
+      <input name="GetBillRefNumber" message="tns:GetBillRefNumber" />
+      <output name="GetBillRefNumber_Result" message="tns:GetBillRefNumber_Result" />
+    </operation>
+    <operation name="GetInvoiceNumber">
+      <input name="GetInvoiceNumber" message="tns:GetInvoiceNumber" />
+      <output name="GetInvoiceNumber_Result" message="tns:GetInvoiceNumber_Result" />
+    </operation>
+    <operation name="GetOrgAccountBalance">
+      <input name="GetOrgAccountBalance" message="tns:GetOrgAccountBalance" />
+      <output name="GetOrgAccountBalance_Result" message="tns:GetOrgAccountBalance_Result" />
+    </operation>
+    <operation name="GetThirdPartyTransID">
+      <input name="GetThirdPartyTransID" message="tns:GetThirdPartyTransID" />
+      <output name="GetThirdPartyTransID_Result" message="tns:GetThirdPartyTransID_Result" />
+    </operation>
+    <operation name="GetMSISDN">
+      <input name="GetMSISDN" message="tns:GetMSISDN" />
+      <output name="GetMSISDN_Result" message="tns:GetMSISDN_Result" />
+    </operation>
+    <operation name="GetFirstName">
+      <input name="GetFirstName" message="tns:GetFirstName" />
+      <output name="GetFirstName_Result" message="tns:GetFirstName_Result" />
+    </operation>
+    <operation name="GetMiddleName">
+      <input name="GetMiddleName" message="tns:GetMiddleName" />
+      <output name="GetMiddleName_Result" message="tns:GetMiddleName_Result" />
+    </operation>
+    <operation name="GetLastName">
+      <input name="GetLastName" message="tns:GetLastName" />
+      <output name="GetLastName_Result" message="tns:GetLastName_Result" />
+    </operation>
+    <operation name="GetRequests">
+      <input name="GetRequests" message="tns:GetRequests" />
+      <output name="GetRequests_Result" message="tns:GetRequests_Result" />
+    </operation>
+    <operation name="SaveTransaction">
+      <input name="SaveTransaction" message="tns:SaveTransaction" />
+      <output name="SaveTransaction_Result" message="tns:SaveTransaction_Result" />
+    </operation>
+  </portType>
+  <binding name="Mpesa_WebService_Binding" type="tns:Mpesa_WebService_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="GetTransID">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetTransID" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetTransID">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetTransID_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetTransTime">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetTransTime" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetTransTime">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetTransTime_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetTransAmount">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetTransAmount" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetTransAmount">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetTransAmount_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBusinessShortCode">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetBusinessShortCode" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBusinessShortCode">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBusinessShortCode_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBillRefNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetBillRefNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBillRefNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBillRefNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetInvoiceNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetInvoiceNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetInvoiceNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetInvoiceNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetOrgAccountBalance">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetOrgAccountBalance" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetOrgAccountBalance">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetOrgAccountBalance_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetThirdPartyTransID">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetThirdPartyTransID" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetThirdPartyTransID">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetThirdPartyTransID_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetMSISDN">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetMSISDN" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetMSISDN">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetMSISDN_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetFirstName">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetFirstName" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetFirstName">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetFirstName_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetMiddleName">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetMiddleName" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetMiddleName">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetMiddleName_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetLastName">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetLastName" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetLastName">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetLastName_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRequests">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:GetRequests" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRequests">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRequests_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SaveTransaction">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/Mpesa_WebService:SaveTransaction" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SaveTransaction">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SaveTransaction_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Mpesa_WebService">
+    <port name="Mpesa_WebService_Port" binding="tns:Mpesa_WebService_Binding">
+      <address location="http://desktop-b5nmsff:7047/DynamicsNAV110/WS/CRONUS%20International%20Ltd./Codeunit/Mpesa_WebService" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>
